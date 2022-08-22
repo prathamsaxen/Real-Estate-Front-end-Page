@@ -1,0 +1,258 @@
+@keyframes head-section-content{
+    from{
+        height: 10vh;
+    }
+    to{
+        height: 82vh;
+    }
+}
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* Logo */
+.logo{
+    margin:1vh 0.5vw;
+}
+/* Logo And Image --Navigation Bar */
+.logo img{
+    width: 3vw;
+    height: 3vh;
+    margin:1vh 1vw;
+    transition: all;
+    transition-duration:0.5s;
+}
+
+/* Navigation Bar */
+#nav-bar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#nav-bar ul{
+    list-style-type: none;
+    font-size: 1.1rem;
+    display: flex;
+}
+#nav-bar ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: .7vh 1.1vw;
+    border-radius: 20px;
+
+}
+#nav-bar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#nav-bar::before
+{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.3;
+}
+#home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vh 6vw;
+    align-items: center;
+    color: white;
+    height: 81vh;
+    animation: head-section-content;
+    animation-duration: 2s;
+}
+#home:before{
+    content: " ";
+    position: absolute;
+    background: url(../Background/main-bg-keys.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+}
+.logo img:hover{
+    height:5vh ;
+    width:5vw;
+    margin: 0vh 0vw;
+}
+.h-primary{
+    font-size: 2.5rem;
+    padding: 2vh 2vw;
+    text-align: center;
+    font-weight: bolder;
+}
+#home p{
+    font-size: 1.3rem;
+    padding: 2vh 19vw;
+    text-align: center;
+    font-weight: bold;
+}
+#check-services-button
+{
+    background-color: transparent;
+    color: white;
+    margin: 2vh;
+    padding: 1vh 3vw;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all;
+    transition-duration: 0.4s;
+    /* animation: service-button;
+    animation-delay: 3s;
+    animation-duration: 4s; */
+
+}
+#check-services-button:hover
+{
+    background-color: rgb(171, 186, 146);
+}
+/* @keyframes service-button {
+    from{
+        visibility: hidden;
+    }
+    to{
+        visibility: visible;
+    }
+} */
+.purchase-your-home{
+    text-align: center;
+    margin-top: 9vh;
+}
+#home-buy-container
+{
+    margin-top: 0vh;
+    text-align: center;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+}
+.selling-box
+{
+    border: 2px solid black;
+    padding: 2vh 2vw;
+    border-radius: 23px;
+    margin: 2vw;
+    background-color: rgb(188, 192, 196);
+}
+
+.selling-box img{
+    width: 20vw;
+    height: 25vh;
+    display: block;
+    margin: 2vh auto;
+}
+.content-house
+{
+    text-align: center;
+    padding: 2vh 2vw;
+    font-weight: bold;
+}
+.center-text
+{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.our-partners
+{
+    padding: 2vh 1vw;
+    /* padding-bottom: 0vh; */
+    text-align: center;
+    font-size: 2.3rem;
+
+}
+.amenities
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7vh;
+
+
+}
+.amentiy
+{
+    padding: 1vh 2vw;
+}
+.amentiy  img
+{
+    width: 15vw;
+    height: 20vh;
+    border-radius: 15px;
+}
+.amenity-section::before
+{
+    content: "";
+    position: absolute;
+    background: url(../Background/Amenity.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 37%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.amenity-section{
+    margin-top: 3vh;
+    margin-bottom: 0;
+    
+}
+.text-center
+{
+    text-align: center;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.contact
+{
+    text-align: center;
+}
+#contact-us::before
+{
+    content: "";
+    position: absolute;
+    background: url(../Background/Contact-bg.webp) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.contact{
+    margin-top: 1vh;
+}
+.form-group{
+    padding: 1.5vh 2vw;
+    
+}
+.form-group input,.form-group textarea{
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}   
+.contact-input-box
+{
+    display: flex;
+    justify-content: center;
+    margin: 4vh 1vw;
+    
+}
+footer
+{
+    position: relative;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    margin: 5vh 1vw;
+}
